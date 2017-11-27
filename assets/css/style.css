@@ -8,7 +8,7 @@ body{
 	position: fixed;
 	top: 0px;
 	padding-top: 10%;
-	background-color: #2c3e50;
+	background-color: #2C3849;
 	color: #fff;
 }
 
@@ -73,8 +73,8 @@ article .share .facebook:hover {
 	border-color: #43609C;
 }
 article .share .gplus:hover {
-	color: #C13929;
-	border-color: #C13929;
+	color: #FFA712;
+	border-color: #FFA712;
 }
 
 #contact-list-secondary {
@@ -82,7 +82,7 @@ article .share .gplus:hover {
 }
 
 .page-header {
-	color: #e74c3c;
+	color: #FFA712;
 	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
 }
 
@@ -123,20 +123,20 @@ article.home h4,
 article.home h5,
 article.home h6 {
 	font-family: 'Ubuntu', sans-serif;
-	color: #f2756a;
+	color: #FFA50E;
 }
 
 article.home h1 a,
 article.home h2 a,
 article.home h3 a,
 article.home h4 a {
-	color: #f2756a;
+	color: #FFA50E;
 }
 article.home h1 a:hover,
 article.home h2 a:hover,
 article.home h3 a:hover,
 article.home h4 a:hover {
-	color: #e74c3c;
+	color: #FFA712;
 }
 
 .author .author-image {
@@ -172,7 +172,7 @@ footer {
     border-radius: 4px 0 0 4px;
 }
 
-.badge { background: #F2756A; }
+.badge { background: #FFA712; }
 
 #nav-menu{
     position: fixed;
