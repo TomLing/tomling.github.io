@@ -5,8 +5,8 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
-#disqus: dbyll
-#google_analytics: dbyll
+disqus: tomling
+google_analytics: UA-110338942-1
 title: Tom Ling
 
 defaults:
@@ -21,9 +21,9 @@ author:
   name: Tom Ling
   email: tomjling@gmail.com
   #github: dbtek
-  twitter: dbtek
+  twitter: _TomLing
  #pinterest: asd123
-  linkedin: asd123
+  linkedin: tom-ling-b5315280
   bio: Software Engineer at the United Kingdom Hydrographic Office
   email_md5: d50df30c69adf3de8cb582186495f6cc
 
