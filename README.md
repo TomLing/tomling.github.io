@@ -8,5 +8,5 @@ Tom Ling Personal Blog
 
 - To stage the website you will need to install the gems for Bundler and Jekyll
 - Then run the following command - bundle exec jekyll serve
-
+- To use drafts (posts that you do not want to publish yet) use the --drafts switch
 
