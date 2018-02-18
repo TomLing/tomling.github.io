@@ -94,7 +94,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 
 Basically, what this code is doing is passing in our input we just configured as an collection of dynamic objects. The dynamic type is used because we do not know the schema of our post object until the function is executed at runtime. Note that the name of the parameter matches up with how we configured our input previously. 
 
-Next we can actually execute our function by clicking the 'Save and run' button, and relying on that your got everything configured correctly, the list of posts in JSON format should appear in the 'Output' window.
+Next, we can actually execute our function by clicking the 'Save and run' button, and relying on that your got everything configured correctly, the list of posts in JSON format should appear in the 'Output' window.
 
 ## Wrap Up
 
