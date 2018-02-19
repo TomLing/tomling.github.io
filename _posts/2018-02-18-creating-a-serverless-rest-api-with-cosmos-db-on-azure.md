@@ -69,7 +69,7 @@ Now we have created the Function App we need to create the actual REST API funct
 
 You will now be presented with a number of template options - Choose the C# HTTP trigger → Give the new function a name and authorisation level (In this example we will use Anonymous), then click create.
 
-After the function has been created a pane should display with the C# code that forms our HTTP API function. In order to pass in the data from our Cosmos DB as a parameter to the function we need to add a new 'Azure Cosmos DB input'. This can be achieved by expanding our function in the left pane and clicking the 'Manage' option.
+After the function has been created a pane should display with the C# code that forms our HTTP API function. In order to pass in the data from our Cosmos DB as a parameter to the function we need to add a new 'Azure Cosmos DB input'. This can be achieved by expanding our function in the left pane and clicking the 'Integrate' option.
 
 ![Function Integrate Option]({{ "/assets/media/functionintegrate.PNG" | absolute_url }})
 
