@@ -16,10 +16,10 @@ defaults:
     values:
       title: Posts
 
-description: Stylish Jekyll Theme
+description: Tom Ling's Personal Blog
 author:
   name: Tom Ling
-  email: tomjling@gmail.com
+  #email: tomjling@gmail.com
   #github: dbtek
   twitter: _TomLing
  #pinterest: asd123
@@ -27,7 +27,7 @@ author:
   bio: Software Engineer at the United Kingdom Hydrographic Office
   email_md5: d50df30c69adf3de8cb582186495f6cc
 
-#rss_path: feed.xml
+rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 

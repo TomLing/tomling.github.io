@@ -44,6 +44,15 @@
 			</a>
 		</li>
 		{% endif %}
+
+
+		{% if site.rss_path %}
+		<li>
+			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+		{% endif %}
 		
 	</ul>
 	<ul id="contact-list-secondary" class="list-unstyled list-inline">
@@ -55,13 +64,6 @@
 		</li>
 		{% endif %}
 		
-		{% if site.rss_path %}
-		<li>
-			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
-				<i class="fa fa-rss fa-lg"></i>
-			</a>
-		</li>
-		{% endif %}
 	</ul>
 </div>
 <!-- sidebar.html end -->

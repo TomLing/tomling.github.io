@@ -6,7 +6,7 @@ layout: null
 	<channel>
 		<category>CodeProject</category>
 		<title>{{ site.title }}</title>
-		<description>Tom Ling Personal Blog</description>
+		<description>{{ site.description }}</description>
 		<link>{{ site.BASE_PATH }}/</link>
 		<atom:link href="{{ site.BASE_PATH }}/{{ site.rss_path }}" rel="self" type="application/rss+xml" />
 		{% for post in site.posts limit:10 %}
