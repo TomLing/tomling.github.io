@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating a serverless REST API with Cosmos DB on Azure
+title: Creating a serverless REST API with Cosmos DB on Azure (Part 1)
 categories: [azure,csharp,dotnet]
-tags: [csharp,cosmosdb,severless,rest,api,azure,dotnet]
+tags: [csharp,cosmosdb,serverless,rest,api,azure,dotnet]
 description: In this post I demonstrate how to create a serverless REST API using Cosmos DB easily on the Azure platform.
 comments: true
 ---
@@ -100,7 +100,7 @@ Next, we can actually execute our function by clicking the 'Save and run' button
 
 Hopefully this has given you a greater insight into the power of setting up an Azure Function for tasks such as returning data and performing operations in the cloud without having to provision or maintain server hardware. This example obviously demonstrates a fairly basic operation but there is no end of use cases when using Functions on Azure.
 
-In the next article I will show how to add other data manipulation options to our function such as adding, removing and updating records in the Azure Cosmos DB.
+In the next article I will show how to add other data manipulation options to our function such as adding and updating records in the Azure Cosmos DB.
 
 
 
