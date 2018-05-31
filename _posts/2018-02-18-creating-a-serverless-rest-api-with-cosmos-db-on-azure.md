@@ -20,7 +20,7 @@ At the moment is it free to get up and running with Azure – When you create a 
 
 First, we are going to create the Cosmos DB instance. Navigate to the new resource menu → Search for Azure Cosmos DB and fill out the required creation settings. Here are the settings I used -
 
-![Cosmos DB settings]({{ "/assets/media/cosmosdbsettings.png" | absolute_url}})
+![Cosmos DB settings]({{ "/assets/media/2018-02-18/cosmosdbsettings.png" | absolute_url}})
 
 *Cosmos DB creation settings*
 
@@ -39,7 +39,7 @@ AccountEndpoint={CosmosDB Endpoint};AccountKey={CosmosDB Key};Database={CosmosDB
 
 The 'AccountEndpoint' and 'AccountKey' parameters can be obtained from Azure by navigating to the 'Settings' section of our Cosmos DB instance and clicking the 'Keys' option.
 
-![Cosmos DB keys]({{ "/assets/media/cosmosdbconnectionstrings.PNG" | absolute_url }})
+![Cosmos DB keys]({{ "/assets/media/2018-02-18/cosmosdbconnectionstrings.PNG" | absolute_url }})
 
 *Cosmos DB key settings (keys have been redacted)*
 
@@ -52,7 +52,7 @@ The partition key field can be left blank and the collection throughput can be s
 The 'Id Field' section requires the Id field on our JSON data collection (think of this as the primary key). In my example it is simply 'id'.
 Now we can simply click through all the windows and click the import button. The JSON data should now be imported into our Cosmos DB.
 
-![Data migration tool import]({{ "/assets/media/dmtimport.PNG" | absolute_url }})
+![Data migration tool import]({{ "/assets/media/2018-02-18/dmtimport.PNG" | absolute_url }})
 
 *Data migration tool import*
 
@@ -61,7 +61,7 @@ Now we can simply click through all the windows and click the import button. The
 Finally, we are going to create the Azure Function that will act as our REST API. Navigate back to the new resource menu → Search for Function App and fill out the required creation settings. I recommend using the consumption plan for hosting due to having 1 million free executions per month.
 Here are the settings I used -
 
-![Function App settings]({{ "/assets/media/functionsettings.PNG" | absolute_url }})
+![Function App settings]({{ "/assets/media/2018-02-18/functionsettings.PNG" | absolute_url }})
 
 *Function App creation settings*
 
@@ -71,11 +71,11 @@ You will now be presented with a number of template options - Choose the C# HTTP
 
 After the function has been created a pane should display with the C# code that forms our HTTP API function. In order to pass in the data from our Cosmos DB as a parameter to the function we need to add a new 'Azure Cosmos DB input'. This can be achieved by expanding our function in the left pane and clicking the 'Integrate' option.
 
-![Function Integrate Option]({{ "/assets/media/functionintegrate.PNG" | absolute_url }})
+![Function Integrate Option]({{ "/assets/media/2018-02-18/functionintegrate.PNG" | absolute_url }})
 
 On the new window that has been presented click the 'New Input' option at the top of the screen, select Azure Cosmos DB and match the values in the following screenshot. To add a new account connection, click the 'new' button and remember that the 'Database name' field is the name of the Azure Cosmos DB instance we created earlier.
 
-![Function Input Options]({{ "/assets/media/functioninput.PNG" | absolute_url }})
+![Function Input Options]({{ "/assets/media/2018-02-18/functioninput.PNG" | absolute_url }})
 
 Before hitting the 'Save' button take note of the SQL Query that will filter out the data that will be available to our function - In our case it will return all records in our 'posts' collection. (The 'c' in this context is an alias for our posts collection). Now hit the save button!
 
