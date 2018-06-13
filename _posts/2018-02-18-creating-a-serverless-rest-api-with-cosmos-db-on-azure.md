@@ -7,7 +7,7 @@ description: In this post I demonstrate how to create a serverless REST API usin
 comments: true
 ---
 
-## What is serverless computing?
+# What is serverless computing?
 
 You've probably heard of the term serverless computing (or serverless functions) by now – but if you haven’t - in a nutshell serverless computing is all about abstracting the user away from the complexity of provisioning, maintaining and configuring servers and letting the developer focus on what they do best - coding. 
 
@@ -21,7 +21,6 @@ At the moment is it free to get up and running with Azure – When you create a 
 First, we are going to create the Cosmos DB instance. Navigate to the new resource menu → Search for Azure Cosmos DB and fill out the required creation settings. Here are the settings I used -
 
 ![Cosmos DB settings]({{ "/assets/media/2018-02-18/cosmosdbsettings.png" | absolute_url}})
-
 *Cosmos DB creation settings*
 
 In this example I choose to use the SQL API for querying data but feel free to choose an option you are familiar with. Now we need to add a collection of data to our database to see our REST API working. For the purpose of this demonstration I have created a small data set of blog posts in JSON format which you can download [here.]({{ "/download/posts.json" | absolute_url }})
@@ -40,7 +39,6 @@ AccountEndpoint={CosmosDB Endpoint};AccountKey={CosmosDB Key};Database={CosmosDB
 The 'AccountEndpoint' and 'AccountKey' parameters can be obtained from Azure by navigating to the 'Settings' section of our Cosmos DB instance and clicking the 'Keys' option.
 
 ![Cosmos DB keys]({{ "/assets/media/2018-02-18/cosmosdbconnectionstrings.PNG" | absolute_url }})
-
 *Cosmos DB key settings (keys have been redacted)*
 
 So to format the connection string for the data migration tool to use, simply copy and paste the 'Primary Connection String' text from Azure and append "Database={CosmosDB Database};" by replacing '{CosmosDB Database}' with the name of the Cosmos DB instance that you chose. You can click 'Verify' to confirm you got everything correct.
@@ -53,7 +51,6 @@ The 'Id Field' section requires the Id field on our JSON data collection (think 
 Now we can simply click through all the windows and click the import button. The JSON data should now be imported into our Cosmos DB.
 
 ![Data migration tool import]({{ "/assets/media/2018-02-18/dmtimport.PNG" | absolute_url }})
-
 *Data migration tool import*
 
 ## Creating the Azure Function App
@@ -62,7 +59,6 @@ Finally, we are going to create the Azure Function that will act as our REST API
 Here are the settings I used -
 
 ![Function App settings]({{ "/assets/media/2018-02-18/functionsettings.PNG" | absolute_url }})
-
 *Function App creation settings*
 
 Now we have created the Function App we need to create the actual REST API function. To do this go to the Function App resource → Click the '+' button next to the 'Functions' option, on the next pane, click the 'Custom function' option.
@@ -101,17 +97,3 @@ Next, we can actually execute our function by clicking the 'Save and run' button
 Hopefully this has given you a greater insight into the power of setting up an Azure Function for tasks such as returning data and performing operations in the cloud without having to provision or maintain server hardware. This example obviously demonstrates a fairly basic operation but there is no end of use cases when using Functions on Azure.
 
 In the next article I will show how to add other data manipulation options to our function such as adding and updating records in the Azure Cosmos DB.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
