@@ -7,13 +7,13 @@ description: In this post I demonstrate how to create a serverless REST API usin
 comments: true
 ---
 
-# What is serverless computing?
+# What is serverless computing
 
-You've probably heard of the term serverless computing (or serverless functions) by now – but if you haven’t - in a nutshell serverless computing is all about abstracting the user away from the complexity of provisioning, maintaining and configuring servers and letting the developer focus on what they do best - coding. 
+You've probably heard of the term serverless computing (or serverless functions) by now – but if you haven’t - in a nutshell serverless computing is all about abstracting the user away from the complexity of provisioning, maintaining and configuring servers and letting the developer focus on what they do best - coding.
 
-Microsoft Azure offer their own serverless implementation that is called Functions. Functions are simply pieces of code that are hosted in the cloud that can be triggered by numerous types of events. These can take the form of timers, data manipulation events and even HTTP calls. In the following example we will cover creating a simple REST API with an Azure Cosmos DB as the data store. Cosmos DB (formerly known as Document DB) is Azure’s implementation of a No SQL database. 
+Microsoft Azure offer their own serverless implementation that is called Functions. Functions are simply pieces of code that are hosted in the cloud that can be triggered by numerous types of events. These can take the form of timers, data manipulation events and even HTTP calls. In the following example we will cover creating a simple REST API with an Azure Cosmos DB as the data store. Cosmos DB (formerly known as Document DB) is Azure’s implementation of a No SQL database.
 
-At the moment is it free to get up and running with Azure – When you create a new account you are given £150 ($200) of credit for a month to use to experiment with most of the services that Azure has to offer. 
+At the moment is it free to get up and running with Azure – When you create a new account you are given £150 ($200) of credit for a month to use to experiment with most of the services that Azure has to offer.
 
 
 ## Creating the Cosmos DB service in Azure
@@ -28,7 +28,7 @@ In this example I choose to use the SQL API for querying data but feel free to c
 ## Adding a data collection to our Cosmos DB instance
 
 Next, we need to download the Azure Cosmos DB database migration tool which can be found at the following link - https://docs.microsoft.com/en-us/azure/cosmos-db/import-data.
-Once the tool is opened click next on the welcome screen → On the source information screen leave the 'Import from' drop down as 'JSON files' then click next. 
+Once the tool is opened click next on the welcome screen → On the source information screen leave the 'Import from' drop down as 'JSON files' then click next.
 
 On the target information screen, we need to enter the connection string for our Cosmos DB instance and specify a collection name for our JSON data. The tool demands the connection string in the following format -
 
@@ -88,7 +88,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
  
 {% endhighlight %}
 
-Basically, what this code is doing is passing in our input we just configured as a collection of dynamic objects. The dynamic type is used because we do not know the schema of our post object until the function is executed at runtime. Note that the name of the parameter matches up with how we configured our input previously. 
+Basically, what this code is doing is passing in our input we just configured as a collection of dynamic objects. The dynamic type is used because we do not know the schema of our post object until the function is executed at runtime. Note that the name of the parameter matches up with how we configured our input previously.
 
 Next, we can actually execute our function by clicking the 'Save and run' button, and relying on that your got everything configured correctly, the list of posts in JSON format should appear in the 'Output' window.
 
@@ -97,3 +97,5 @@ Next, we can actually execute our function by clicking the 'Save and run' button
 Hopefully this has given you a greater insight into the power of setting up an Azure Function for tasks such as returning data and performing operations in the cloud without having to provision or maintain server hardware. This example obviously demonstrates a fairly basic operation but there is no end of use cases when using Functions on Azure.
 
 In the next article I will show how to add other data manipulation options to our function such as adding and updating records in the Azure Cosmos DB.
+
+Part two of this series can be found [here.]({% post_url 2018-06-13-creating-a-serverless-rest-api-with-cosmos-db-on-azure-part-2 %})
