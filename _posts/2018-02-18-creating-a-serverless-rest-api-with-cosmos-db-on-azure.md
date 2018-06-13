@@ -63,7 +63,7 @@ Here are the settings I used -
 
 Now we have created the Function App we need to create the actual REST API function. To do this go to the Function App resource → Click the '+' button next to the 'Functions' option, on the next pane, click the 'Custom function' option.
 
-You will now be presented with a number of template options - Choose the C# HTTP trigger → Give the new function a name and authorisation level (In this example we will use Anonymous), then click create.
+You will now be presented with a number of template options - Choose the C# HTTP trigger → Give the new function a name and authorization level (In this example we will use Anonymous), then click create.
 
 After the function has been created a pane should display with the C# code that forms our HTTP API function. In order to pass in the data from our Cosmos DB as a parameter to the function we need to add a new 'Azure Cosmos DB input'. This can be achieved by expanding our function in the left pane and clicking the 'Integrate' option.
 
@@ -88,7 +88,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
  
 {% endhighlight %}
 
-Basically, what this code is doing is passing in our input we just configured as an collection of dynamic objects. The dynamic type is used because we do not know the schema of our post object until the function is executed at runtime. Note that the name of the parameter matches up with how we configured our input previously. 
+Basically, what this code is doing is passing in our input we just configured as a collection of dynamic objects. The dynamic type is used because we do not know the schema of our post object until the function is executed at runtime. Note that the name of the parameter matches up with how we configured our input previously. 
 
 Next, we can actually execute our function by clicking the 'Save and run' button, and relying on that your got everything configured correctly, the list of posts in JSON format should appear in the 'Output' window.
 
