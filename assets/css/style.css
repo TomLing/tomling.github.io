@@ -188,6 +188,6 @@ footer {
 ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
-p img{
+p > img{
 	border-radius: 5px;
 }
