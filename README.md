@@ -6,10 +6,10 @@ This is my personal blog built using dbyll http://dbtek.github.io/dbyll/ and jek
 
 ## Install
 
-* To stage the website you will need to install the gems for Bundler and Jekyll
-* Then run the following command - bundle exec jekyll serve
-* To use drafts (posts that you do not want to publish yet) use the --drafts switch
+* To stage the website you will need to install the gems for Bundler and Jekyll.
+* Then run the following command - bundle exec jekyll serve.
+* To use drafts (posts that you do not want to publish yet) use the --drafts switch.
 
 ## Update
 
-* Run bundle update to update to the latest version of Jekyll
+* Run bundle update to update to the latest version of Jekyll.
