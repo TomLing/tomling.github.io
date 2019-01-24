@@ -190,3 +190,44 @@ ul.dropdown-menu>li>a>i.fa {
 p > img{
 	border-radius: 5px;
 }
+
+/* navbar */
+.navbar-default {
+    background-color: #2c3849;
+	border-color: #2c3849;
+	-webkit-border-radius: 0;
+    -moz-border-radius: 0;
+	border-radius: 0;
+	box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ddd;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color:white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ddd;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ddd;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #ddd;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+	border-bottom-color: #777;
+}
