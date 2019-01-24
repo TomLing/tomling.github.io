@@ -13,7 +13,7 @@ Routing refers to the way an application responds to a client request to a parti
 
 ## Azure Functions Default Routing
 
-To demonstrate the various routing options I will be using the default Azure Functions 2.0 (.NET Core) HTTP trigger template which looks a like this (at the time of writing).
+To demonstrate the various routing options, I will be using the default Azure Functions 2.0 (.NET Core) HTTP trigger template which looks a like this, (at the time of writing).
 
 {% highlight csharp %}
 [FunctionName("NameFunction")]
@@ -42,7 +42,7 @@ This URL is comprised of a route prefix of api, then the name of your function, 
 
 *Running the app exposes the default URL*
 
-Navigating to this URL in the browser supplied with a URL parameter with your name yields the following result.
+Navigating to this URL in the browser supplied with a parameter with your name yields the following result.
 
 ![Default Route Browser Result]({{ "/assets/media/2019-01-24/defaultroutebrowser.PNG" | absolute_url }})
 
@@ -82,7 +82,7 @@ In order to remove the route prefix completely modify the routePrefix section of
 
 This will turn **_http://localhost:7071/api/NameFunction_** into **_http://localhost:7071/NameFunction_**.
 
-Removing the route prefix I can still call the API as I normally would by dropping it from the URL.
+Removing the route prefix, I can still call the API as I normally would by dropping it from the URL.
 
 ![Remove Route Prefix Browser Result]({{ "/assets/media/2019-01-24/defaultroutebrowserwithoutprefix.PNG" | absolute_url }})
 
@@ -122,7 +122,7 @@ public static IActionResult Run(
 
 This will change the URL to the following **_http://localhost:7071/api/GetName/{name}_**
 
-Now instead of supplying the name via a URL parameter I can instead supply it using a route parameter.
+Now instead of supplying the name via a URL parameter, I can instead supply it using a route parameter.
 
 ![Route Parameter]({{ "/assets/media/2019-01-24/routebrowserparameter.PNG" | absolute_url }})
 
@@ -132,12 +132,12 @@ If we do not specify a route parameter, the user is returned a 404 as no matchin
 
 ## Making route parameters optional
 
-Supplying function parameters using routing as demonstrated in my previous example is a great way of making the URL of our function more human readable and easier to consume. However we have refactored our code to remove the friendly message to alert the user they have forgotten to supply the name parameter.
+Supplying function parameters using routing as demonstrated in my previous example is a great way of making the URL of our function more human readable and easier to consume. However, we have refactored our code to remove the friendly message to alert the user they have forgotten to supply the name parameter.
 
 In order to add this message back into our function, we need to make our route parameter optional.
 This can be achieved by adding a **?** to the parameter name in the route definition and the type in the function header parameters (if it is a value type in order to make it nullable).
 
-Refactor the code to the following
+Refactor the code to the following.
 
 {% highlight csharp %}
 [FunctionName("NameFunction")]
