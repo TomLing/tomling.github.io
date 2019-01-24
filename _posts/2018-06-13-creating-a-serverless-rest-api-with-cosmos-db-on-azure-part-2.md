@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Creating a serverless REST API with Cosmos DB on Azure (Part 2) - Create and Update operations
-categories: [azure,csharp,dotnet]
-tags: [csharp,cosmosdb,serverless,rest,api,azure,dotnet]
+categories: [azure,csharp,dotnet,serverless,functions]
+tags: [csharp,cosmosdb,serverless,rest,api,azure,dotnet,functions]
 description: In this post we expand our function application to add the ability to update and create records in our database.
 comments: true
 ---

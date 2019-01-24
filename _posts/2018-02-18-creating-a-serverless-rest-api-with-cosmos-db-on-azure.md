@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Creating a serverless REST API with Cosmos DB on Azure (Part 1)
-categories: [azure,csharp,dotnet]
-tags: [csharp,cosmosdb,serverless,rest,api,azure,dotnet]
+categories: [azure,csharp,dotnet,serverless,functions]
+tags: [csharp,cosmosdb,serverless,rest,api,azure,dotnet,functions]
 description: In this post I demonstrate how to create a serverless REST API using Cosmos DB easily on the Azure platform.
 comments: true
 ---
@@ -14,7 +14,6 @@ You've probably heard of the term serverless computing (or serverless functions)
 Microsoft Azure offer their own serverless implementation that is called Functions. Functions are simply pieces of code that are hosted in the cloud that can be triggered by numerous types of events. These can take the form of timers, data manipulation events and even HTTP calls. In the following example we will cover creating a simple REST API with an Azure Cosmos DB as the data store. Cosmos DB (formerly known as Document DB) is Azure’s implementation of a No SQL database.
 
 At the moment is it free to get up and running with Azure – When you create a new account you are given £150 ($200) of credit for a month to use to experiment with most of the services that Azure has to offer.
-
 
 ## Creating the Cosmos DB service in Azure
 
