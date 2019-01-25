@@ -141,18 +141,18 @@ Refactor the code to the following.
 
 {% highlight csharp %}
 [FunctionName("NameFunction")]
-        public static IActionResult Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "GetName/{name?}")]
-            HttpRequest req,
-            string name,
-            ILogger log)
-        {
-            log.LogInformation("C# HTTP trigger function processed a request.");
+public static IActionResult Run(
+    [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "GetName/{name?}")]
+    HttpRequest req,
+    string name,
+    ILogger log)
+{
+    log.LogInformation("C# HTTP trigger function processed a request.");
 
-            return name != null
-                ? (ActionResult)new OkObjectResult($"Hello, {name}")
-                : new BadRequestObjectResult("Please pass a name as a route parameter");
-        }
+    return name != null
+        ? (ActionResult)new OkObjectResult($"Hello, {name}")
+        : new BadRequestObjectResult("Please pass a name as a route parameter");
+}
 {% endhighlight %}
 
 Now by specifying our name as a URL parameter, we can see our greeting message as expected.
