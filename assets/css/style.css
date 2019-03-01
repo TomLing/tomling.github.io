@@ -233,3 +233,9 @@ p > img{
     border-top-color: #777;
 	border-bottom-color: #777;
 }
+.high-contrast-link {
+	color: #0000b8 !important;
+}
+.pager .disabled>a{
+	color: #697578 !important;
+}
