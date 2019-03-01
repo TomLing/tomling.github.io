@@ -1,3 +1,4 @@
+
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
 
 body{
@@ -73,8 +74,8 @@ article .share .facebook:hover {
 	border-color: #43609C;
 }
 article .share .gplus:hover {
-	color: #FFA712;
-	border-color: #FFA712;
+	color: #f16c20;
+	border-color: #f16c20;
 }
 
 #contact-list-secondary {
@@ -82,7 +83,7 @@ article .share .gplus:hover {
 }
 
 .page-header {
-	color: #FFA712;
+	color: #f16c20;
 }
 
 @media only screen and (min-width: 768px) {
@@ -122,20 +123,20 @@ article.home h4,
 article.home h5,
 article.home h6 {
 	font-family: 'Ubuntu', sans-serif;
-	color: #FFA50E;
+	color: #f16c20;
 }
 
 article.home h1 a,
 article.home h2 a,
 article.home h3 a,
 article.home h4 a {
-	color: #FFA50E;
+	color: #f16c20;
 }
 article.home h1 a:hover,
 article.home h2 a:hover,
 article.home h3 a:hover,
 article.home h4 a:hover {
-	color: #FFA712;
+	color: #f16c20;
 }
 
 .author .author-image {
@@ -171,7 +172,7 @@ footer {
     border-radius: 4px 0 0 4px;
 }
 
-.badge { background: #FFA712; }
+.badge { background: #f16c20; }
 
 #nav-menu{
     position: fixed;
