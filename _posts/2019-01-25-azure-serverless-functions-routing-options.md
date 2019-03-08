@@ -165,4 +165,4 @@ And by dropping the name, the parameter defaults to null and our reminder messag
 
 ## Wrap Up
 
-Hopefully this serves as a fairly comprehensive guide on how to configure routing on Azure Functions. If you have any questions, please let me know by Twitter (@_TomLing) or the comment section below.
+Hopefully this serves as a fairly comprehensive guide on how to configure routing on Azure Functions. If you have any questions, please let me know by Twitter (@TomLingDev) or the comment section below.
