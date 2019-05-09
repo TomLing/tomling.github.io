@@ -7,7 +7,7 @@ description: In this post we expand our function application to add the ability 
 comments: true
 ---
 
-# Expanding our serverless REST API
+## Expanding our serverless REST API
 
 If you haven't yet - It would be good idea to get started by reading my [previous blog post]({% post_url 2018-02-18-creating-a-serverless-rest-api-with-cosmos-db-on-azure %}) detailing how to provision the Azure Function and Cosmos DB, Adding data to the database & creating a basic HTTP trigger function that returns data from a Cosmos DB collection.
 

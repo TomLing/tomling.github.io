@@ -7,7 +7,7 @@ description: In this post I demonstrate how to create a serverless REST API usin
 comments: true
 ---
 
-# What is serverless computing
+## What is serverless computing
 
 You've probably heard of the term serverless computing (or serverless functions) by now – but if you haven’t - in a nutshell serverless computing is all about abstracting the user away from the complexity of provisioning, maintaining and configuring servers and letting the developer focus on what they do best - coding.
 

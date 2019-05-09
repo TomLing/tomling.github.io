@@ -7,7 +7,7 @@ description: In this post I will cover the various HTTP routing configurations w
 comments: true
 ---
 
-# What is routing
+## What is routing
 
 Routing refers to the way an application responds to a client request to a particular endpoint address and specific HTTP request method (GET, POST etc). In the context of Azure Functions, the route defines which function is going to respond to a HTTP request.
 
