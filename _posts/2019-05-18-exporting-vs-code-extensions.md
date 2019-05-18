@@ -11,7 +11,7 @@ comments: true
 
 VS Code is one of my favourite IDEs for web development and text editing, In my opinion, it is currently the best choice out there if you are looking for a powerful development tool with a rich set of features. One thing lacking from VS Code is the ability to easily transfer your development setup and extensions from one machine to another. In this blog post, I will demonstrate a simple piece of PowerShell that makes it very straightforward.
 
-First, open up the command prompt (you will need PowerShell installed and enabled) then navigate to a directory where you have permission to create files (for example C:\temp).
+First, open up the command prompt (you will need PowerShell installed and enabled) then navigate to a directory where you have permission to create files.
 
 Run the following command
 
