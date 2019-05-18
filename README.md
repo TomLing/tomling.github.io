@@ -11,7 +11,7 @@ This is my personal blog built using dbyll http://dbtek.github.io/dbyll/ and jek
 ## Run
 
 * Execute the following command in your terminal of choice - bundle exec jekyll serve.
-* To use drafts (posts that you do not want to publish yet) use the --drafts switch.
+* To use drafts (posts that you do not want to publish yet) use the --drafts switch (bundle exec jekyll serve --drafts).
 
 ## Update
 
